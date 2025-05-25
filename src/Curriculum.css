@@ -1,0 +1,19 @@
+/* Estilos para el fondo dinámico */
+body {
+  /* Asegura que el body ocupe toda la altura de la ventana */
+  min-height: 100vh;
+  margin: 0; /* Elimina el margen por defecto del body */
+  padding: 0; /* Elimina el padding por defecto del body */
+
+  /* Gradiente radial para el fondo oscuro */
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+
+  /* Transición suave para cambios en el fondo (por ejemplo, al cambiar de modo claro/oscuro) */
+  transition: background 0.7s ease-in-out; /* Transición para todas las propiedades de background */
+}
+
+/* Ejemplo de cómo cambiar el fondo para un "modo claro" */
+/* Puedes añadir una clase al body, por ejemplo, <body class="light-mode"> */
+body.light-mode {
+  background: radial-gradient(125% 125% at 50% 10%, #ddd 40%, #aaf 100%);
+}

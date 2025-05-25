@@ -1,0 +1,86 @@
+/* LiveClockBadge.css */
+
+.live-clock-badge-container {
+  width: 340px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  border: 3px solid blue;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.live-clock-badge-container-hover {
+  background-color: #444;
+  border: 3px solid lightblue;
+  transform: scale(1.02);
+}
+
+.live-clock-badge-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #39FF14;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #39FF14, 0 0 5px #39FF14 inset;
+}
+
+.live-clock-badge-icon {
+  font-size: 1.2em;
+  color: #ADD8E6;
+}
+
+.live-clock-badge-text {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 1024px) {
+  .live-clock-badge-container {
+    width: 250px;
+    left: 15px;
+    top: 15px;
+    padding: 8px 12px;
+  }
+  .live-clock-badge-text {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 768px) {
+  .live-clock-badge-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: 2px solid blue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .live-clock-badge-container-hover {
+    transform: translateX(-50%) scale(1.02);
+  }
+  .live-clock-badge-text {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-clock-badge-container {
+    display: none;
+  }
+}

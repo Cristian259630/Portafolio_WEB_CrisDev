@@ -1,0 +1,138 @@
+/* LanguageBadge.css */
+
+
+.language-badge-container {
+  width: 340px;
+  position: fixed;
+  top: 90px; 
+  left: 20px;
+  background-color: #333; 
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px; 
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  z-index: 1000; 
+  border: 3px solid blue;
+  font-family: 'Arial', sans-serif;
+  
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.language-badge-container-hover {
+  background-color: #444; 
+  border: 3px solid lightblue; 
+  transform: scale(1.02); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.language-badge-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #39FF14; 
+  border-radius: 50%; 
+  box-shadow: 0 0 8px #39FF14, 0 0 5px #39FF14 inset; 
+}
+
+.language-badge-icon {
+  font-size: 1.2em;
+  color: #ADD8E6; 
+}
+
+.language-badge-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-badge-title-text {
+  text-align: center;
+  color: yellow;
+  font-size: 1.1em; 
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+.language-badge-main-text {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.language-badge-sub-text {
+  font-size: 0.75em;
+  opacity: 0.8; 
+}
+
+.language-badge-image {
+  width: 120px;
+  margin: 10px auto 0; 
+  border-radius: 50px; 
+  border: 3px solid blue;
+  display: block; 
+}
+
+
+
+@media (max-width: 1024px) {
+  .language-badge-container {
+    width: 250px; 
+    left: 15px;
+    top: 80px;   
+    padding: 8px 12px; 
+    display: none;
+  }
+  .language-badge-title-text {
+    font-size: 1em;
+  }
+  .language-badge-main-text {
+    font-size: 0.85em;
+  }
+  .language-badge-sub-text {
+    font-size: 0.7em;
+  }
+  .language-badge-image {
+    width: 100px; 
+    margin-top: 8px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .language-badge-container {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: auto;   
+    width: 90%;
+    max-width: 300px; 
+    padding: 10px 15px; 
+    border: 2px solid blue; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  .language-badge-container-hover {
+    transform: translateX(-50%) scale(1.02); 
+  }
+  .language-badge-title-text {
+    font-size: 1.0em;
+  }
+  .language-badge-main-text {
+    font-size: 0.9em;
+  }
+  .language-badge-sub-text {
+    font-size: 0.75em;
+  }
+  .language-badge-image {
+    width: 110px; 
+    margin-top: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .language-badge-container {
+    display: none; 
+  }
+}

@@ -1,0 +1,113 @@
+/* LearningBadge.css */
+
+/* --- Base container styles (for larger screens like desktop) --- */
+.learning-badge-container {
+  width: 340px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333; /* Fondo oscuro para el badge */
+  color: white; /* Texto blanco */
+  padding: 10px 15px;
+  border-radius: 25px; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sutil sombra */
+  z-index: 1000;
+  border: 3px solid blue;
+  font-family: Arial, sans-serif;
+  /* Add box-shadow to transition for smoother hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Ensure padding/border are included in total width */
+}
+
+/* --- Hover styles for the container --- */
+/* This class will be conditionally added by React */
+.learning-badge-container-hover {
+  background-color: #444; /* Ligeramente más claro al pasar el mouse */
+  border: 3px solid lightblue; /* Cambia el color del borde al pasar el mouse */
+  transform: scale(1.02); /* Ligeramente más grande al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* --- Styles for the inner elements --- */
+.learning-badge-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #39FF14; /* Verde neón para la "luz" */
+  border-radius: 50%; /* Círculo perfecto */
+  box-shadow: 0 0 8px #39FF14, 0 0 5px #39FF14 inset; /* Efecto de brillo verde */
+}
+
+.learning-badge-icon {
+  font-size: 1.2em;
+  color: #ADD8E6; /* Azul claro para el icono */
+}
+
+.learning-badge-text {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 1024px (e.g., small laptops, large tablets in landscape) */
+@media (max-width: 1024px) {
+  .learning-badge-container {
+    width: 250px; /* Adjust width */
+    right: 15px; /* Move slightly closer to the edge */
+    top: 15px; /* Adjust top position */
+    padding: 8px 12px; /* Slightly smaller padding */
+    display: none;
+  }
+  .learning-badge-text {
+    font-size: 0.8em; /* Adjust text size within smaller badge */
+  }
+  .learning-badge-icon {
+    font-size: 1.1em; /* Adjust icon size */
+  }
+}
+
+/* For screens smaller than 768px (e.g., most tablets in portrait, large phones in landscape) */
+@media (max-width: 768px) {
+  .learning-badge-container {
+    position: fixed; /* Keep it fixed */
+    bottom: 20px; /* Stick to the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+    top: auto; /* Remove top constraint */
+    right: auto; /* Remove right constraint */
+    width: 90%; /* Make it wider to fill more of the screen */
+    max-width: 300px; /* But don't let it get too wide on very large phones */
+    padding: 10px 15px; /* Can revert to original or adjust */
+    border: 2px solid blue; /* Slightly thinner border for mobile */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    /* Ensure transition on mobile too */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Adjust hover for mobile if you keep it, or remove it */
+  .learning-badge-container-hover {
+    transform: translateX(-50%) scale(1.02); /* Apply scale after centering */
+    border: 2px solid lightblue; /* Adjust border hover for mobile */
+  }
+
+  .learning-badge-dot {
+    width: 8px; /* Smaller dot */
+    height: 8px;
+  }
+  .learning-badge-icon {
+    font-size: 1em; /* Smaller icon */
+  }
+  .learning-badge-text {
+    font-size: 0.85em; /* Slightly larger text for bottom badge */
+  }
+}
+
+/* For very small screens smaller than 480px (e.g., most smartphones in portrait) */
+@media (max-width: 480px) {
+  .learning-badge-container {
+    display: none; /* Completely hide the element on small phones */
+  }
+}

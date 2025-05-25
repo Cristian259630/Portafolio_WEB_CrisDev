@@ -1,0 +1,126 @@
+/* HobbiesBadge.css */
+
+/* --- Base container styles (for larger screens - desktop) --- */
+.hobbies-badge-container {
+  width: 340px;
+  position: fixed;
+  top: 95px; /* Adjust this to be below LearningBadge if LearningBadge is at top: 20px and has ~60px height */
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 999; /* Ensure it's below LearningBadge if LearningBadge is 1000 */
+  border: 3px solid blue;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding/border in total width */
+}
+
+/* --- Hover styles for the container --- */
+.hobbies-badge-container-hover {
+  background-color: #444;
+  border: 3px solid lightblue;
+  transform: scale(1.02);
+}
+
+/* --- Styles for inner elements --- */
+.hobbies-badge-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: yellow;
+}
+
+.hobbies-badge-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hobbies-badge-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #666;
+  margin-bottom: 8px;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for image change */
+}
+
+.hobbies-badge-name {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hobbies-badge-no-hobbies-text {
+  font-size: 0.9em;
+  color: #ccc;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .hobbies-badge-container {
+    width: 250px; /* Adjust width */
+    right: 15px; /* Move closer to the edge */
+    top: 80px;   /* Adjust top position to fit below LearningBadge (if it moved to 15px top) */
+    padding: 8px 12px; /* Smaller padding */
+    display: none;
+  }
+  .hobbies-badge-title {
+    font-size: 1em;
+  }
+  .hobbies-badge-image {
+    width: 100px; /* Smaller image */
+    height: 100px;
+  }
+  .hobbies-badge-name {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hobbies-badge-container {
+    
+    position: fixed;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;   
+    right: auto; 
+    width: 90%;
+    max-width: 300px; 
+    padding: 10px 15px;
+    border: 2px solid blue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .hobbies-badge-container-hover {
+    transform: translateX(-50%) scale(1.02); 
+  }
+  .hobbies-badge-title {
+    font-size: 1.0em;
+  }
+  .hobbies-badge-image {
+    width: 90px; 
+    height: 90px;
+  }
+  .hobbies-badge-name {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-badge-container {
+    display: none;
+  }
+}
