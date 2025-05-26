@@ -37,7 +37,7 @@ const ProfileSection = () => {
     >
       
       <div style={styles.header}>
-        <img src="URL_DE_TU_IMAGEN_DE_PERFIL" alt="Cristia" style={styles.profileImage} /> 
+        <img src="https://i.ibb.co/0p4fSRYt/FOTO-DE-MI.png" alt="Cristia" style={styles.profileImage} /> 
         <h1 style={styles.name}>Hey, soy Cristian</h1>
         <span style={styles.availableBadge}>Disponible para trabajar</span>
       </div>
