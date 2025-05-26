@@ -93,7 +93,7 @@ const styles = {
   },
   profileImage: {
     width: '80px',
-    height: '90px',
+    height: '100px',
     borderRadius: '50%',
     marginRight: '10px',
     
