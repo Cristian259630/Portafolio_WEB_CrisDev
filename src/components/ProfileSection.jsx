@@ -92,7 +92,7 @@ const styles = {
     marginBottom: '20px',
   },
   profileImage: {
-    width: '90px',
+    width: '60px',
     height: '90px',
     borderRadius: '50%',
     marginRight: '20px',
