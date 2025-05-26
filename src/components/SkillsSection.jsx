@@ -13,7 +13,10 @@ const SkillsSection = ({ skills }) => {
     { name: "HTML5", level: "avanzado" },
     { name: "CSS3", level: "avanzado" },
     { name: "Joomla", level: "avanzado" },
-    { name: "Odoo", level: "avanzado" }
+    { name: "Odoo", level: "avanzado" },
+    { name: "GitHub", level: "avanzado" },
+    { name: "Flutter", level: "basico" },
+    { name: "Dart", level: "basico" }
   ];
 
   // Usa las habilidades pasadas por prop o las fijas
