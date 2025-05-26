@@ -92,10 +92,10 @@ const styles = {
     marginBottom: '20px',
   },
   profileImage: {
-    width: '70px',
+    width: '80px',
     height: '90px',
     borderRadius: '50%',
-    marginRight: '20px',
+    marginRight: '10px',
     
   },
   name: {
