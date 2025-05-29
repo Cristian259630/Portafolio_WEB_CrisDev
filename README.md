@@ -2,7 +2,7 @@
 
 Bienvenidos a mi portafolio WEB, esta hecho para compartir toda mi experiencia en el ramo del desarrollo de Software, es un proyecto muy importante para mi, es un gran logro que todo haya funcionado bien
 
-![Demo]([./public/demo.png](https://simulador-fifa-club-world-cup-2025.vercel.app))
+![Demo]((https://simulador-fifa-club-world-cup-2025.vercel.app))
 
 ---
 
