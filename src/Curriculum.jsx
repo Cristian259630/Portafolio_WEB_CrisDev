@@ -71,7 +71,7 @@ const Curriculum = () => {
 
 const projects = [
   {
-      name: "Simulador FIFA Club World Cup",
+      name: "Simulador FIFA Club World Cup 2025",
       description:
         "Una app diseñada para simular el torneo de clubes que se realizara este año",
       image: "https://images.mlssoccer.com/image/private/t_q-best/mls/s9msikvatngfsqngtkrz.jpg",
