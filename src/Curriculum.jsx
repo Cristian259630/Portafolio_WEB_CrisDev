@@ -43,6 +43,10 @@ const Curriculum = () => {
   {
     title: "Selenium Webdriver - UAQ",
     image: "https://i.ibb.co/tdhr0pt/selenium.png"
+  },
+  {
+    title: "Curso de Flutter y Dart - Videocursos.co",
+    image: "https://i.ibb.co/hRnt2wzk/Cristian-Fernando-18-Curso-de-Flutter-y-Dart-Verificar-Certificado-Videocursos-Cursos-en-Linea-Onlin.jpg"
   }
 
 ];
