@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './Curriculum.css'; // Opcional: si vas a añadir estilos específicos
+import './Curriculum.css'; 
 import ProfileSection from './components/ProfileSection';
 import ExperienceSection from './components/ExperienceSection';
 import CertificatesSection from './components/CertificatesSection';
